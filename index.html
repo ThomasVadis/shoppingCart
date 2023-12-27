@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-4">Shopping Cart</h1>
+      <div class="row">
+        <!--table-->
+        <div class="col-8">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col"></th>
+                <th scope="col">SubTotal</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <form class="col-12 mt-2 mb-4" id="addItem">
+          <input class="mx-2" name="item" type="text" placeholder="item" required />
+          <input class="mx-2" name="price" type="number" placeholder="price" required/>
+          <button class="btn btn-primary btn-sm">add</button>
+        </form>
+
+        <!--portfolio value and profit-->
+        <div class="col-12 ">
+          <h3>Total Cost: $ <span id="totalCost"></span></h3>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
